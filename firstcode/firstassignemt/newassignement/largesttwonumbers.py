@@ -6,9 +6,8 @@ for number in range (1, 11):
 	
 	if first_largest < current_number:
 		first_largest = current_number
-		if second_largest != first_largest:
-			second_largest = current_number
-	
+	elif second_largest < number or current_number < number:
+		second_largest = number	
 
 print(first_largest) 
 print(second_largest)
