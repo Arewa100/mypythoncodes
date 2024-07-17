@@ -153,15 +153,15 @@ for attempt in range(1, 11):
 	print(" ")
 
 if total_number_of_question_passed >= 10: 
-	print(name + " Excellent, you passed with grade A 100")
+	print(name + " Excellent, you passed with grade A : your score is 100")
 
 elif total_number_of_question_passed < 10:
-	print(name + " you passed with grade B 60")
+	print(name + " you passed with grade B : your score is 60")
 
 elif total_number_of_question_passed <= 5: 
-	print(name + " you passed with grade C 45")
+	print(name + " you passed with grade C : your score is 45")
 
 elif total_number_of_question_passed == 0:
-	print(miracle + " you failed....try again with a grade of F")
+	print(miracle + " you failed with a grade of F....try again")
 
 
