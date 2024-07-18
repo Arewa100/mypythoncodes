@@ -30,7 +30,7 @@ while flag  != "no":
 	
 	print(f"the road tax to be paid based on your {car_type} car price is {amount_paid_on_road_tax}")
 	
-	flag = input("press yes to continue or no to end")
+	flag = input("press yes to continue or no to end:  ")
 	
 
 
