@@ -15,9 +15,9 @@ def roadtax(carcost):
 		car_roadtax = taxcalculator(carcost, 25)
 		return car_roadtax
 
-def taxcalculator(cost, tax):
-	percentage = (tax/100)
-	calculated_tax = (cost * percentage)
+def taxcalculator(cost, percentage):
+	percentageCost = (percentage/100)
+	calculated_tax = (cost * percentageCost)
 	
 	return calculated_tax
 
