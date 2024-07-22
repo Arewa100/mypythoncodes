@@ -103,5 +103,55 @@ public class IncomeTaxTest {
 		assertEquals(137912.5, result);
 }
 
+	
+
+	@Test
+	public void testingIfmarriedfillingseperatelyFunctionIsWorkingProperlyForIncomesLessThanTheFirstInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.marriedfillingseperately(8350);
+		
+		assertEquals(835.0, result);
+}	
+	@Test
+	public void testingIfmarriedfillingseperatelyIsWorkingProperlyForIncomesForTheSecondInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.marriedfillingseperately(8351);
+		
+		assertEquals(835.15, result);
+}
+	@Test
+	public void testingIfmarriedfillingseperatelyIsWorkingProperlyForIncomesForTheThirdInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.marriedfillingseperately(33951);
+		
+		assertEquals(7235.25, result);
+}
+	@Test
+	public void testingIfmarriedfillingseperatelyProperlyForIncomesForTheFourthInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.marriedfillingseperately(68525);
+		
+		assertEquals(15878.75, result);
+}
+	@Test
+	public void testingIfmarriedfillingseperatelyIsWorkingProperlyForIncomesForTheFifthInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.marriedfillingseperately(104426);
+		
+		assertEquals(32540.08, result);
+}
+	@Test
+	public void testingIfmarriedfillingseperatelyIsWorkingProperlyForIncomesForTheSixthInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.marriedfillingseperately(400000);
+		
+		assertEquals(137912.5, result);
+}
 
 }

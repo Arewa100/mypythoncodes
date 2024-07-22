@@ -130,5 +130,70 @@ public class IncomeTax {
 		return tax;
 	}
 }
+	public double marriedfillingseperately(double taxableincome) {
 
+		double rate;
+		double first_rate;
+		double tax_on_first_rate;
+		double tax;
+		double feedback;
+		double result;
+
+	if (taxableincome <= 8350) {
+		rate = (10.0/100);
+		tax = (taxableincome * rate);
+		
+		return tax;
+
+	} else if (taxableincome >= 8351 && taxableincome <= 33950) {
+		rate = (15.0/100);
+		first_rate = (10.0/100);
+		tax_on_first_rate = (8350 *first_rate);
+		result = (taxableincome - 8350);
+		feedback = (result * rate);
+		tax = (tax_on_first_rate + feedback);
+		
+		return tax;
+
+	} else if (taxableincome >= 33951 && taxableincome <= 68525) {
+		rate = (25.0/100);
+		first_rate = (10.0/100);
+		tax_on_first_rate = (8350 *first_rate);
+		result = (taxableincome - 8350);
+		feedback = (result * rate);
+		tax = (tax_on_first_rate + feedback);
+		
+		return tax;
+
+	} else if (taxableincome >= 68525 && taxableincome <= 104425) {
+		rate = (28.0/100);
+		first_rate = (10.0/100);
+		tax_on_first_rate = (8350 *first_rate);
+		result = (taxableincome - 8350);
+		feedback = (result * rate);
+		tax = (tax_on_first_rate + feedback);
+		
+		return tax;
+
+	} else if (taxableincome >= 104426 && taxableincome <= 186475) {
+		rate = (33.0/100);
+		first_rate = (10.0/100);
+		tax_on_first_rate = (8350 *first_rate);
+		result = (taxableincome - 8350);
+		feedback = (result * rate);
+		tax = (tax_on_first_rate + feedback);
+		
+		return tax;
+	
+	} else {
+		rate = (35.0/100);
+		first_rate = (10.0/100);
+		tax_on_first_rate = (8350 *first_rate);
+		result = (taxableincome - 8350);
+		feedback = (result * rate);
+		tax = (tax_on_first_rate + feedback);
+		
+		return tax;
+	}
+}
 }
