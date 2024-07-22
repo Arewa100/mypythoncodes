@@ -154,4 +154,54 @@ public class IncomeTaxTest {
 		assertEquals(137912.5, result);
 }
 
+
+	@Test
+	public void testingIfheadofhouseholdFunctionIsWorkingProperlyForIncomesLessThanTheFirstInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.headofhousehold(11950);
+		
+		assertEquals(1195.0, result);
+}	
+	@Test
+	public void testingIfheadofhouseholdFunctionIsWorkingProperlyForIncomesForTheSecondInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.headofhousehold(11951);
+		
+		assertEquals(1375.15, result);
+}
+	@Test
+	public void testingIfheadofhouseholdFunctionIsWorkingProperlyForIncomesForTheThirdInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.headofhousehold(45501);
+		
+		assertEquals(10122.75, result);
+}
+	@Test
+	public void testingIfheadofhouseholdFunctionIsProperlyForIncomesForTheFourthInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.headofhousehold(117451);
+		
+		assertEquals(31383.280000000002, result);
+}
+	@Test
+	public void testingIfheadofhouseholdFunctionIsWorkingProperlyForIncomesForTheFifthInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.headofhousehold(190201);
+		
+		assertEquals(60845.83, result);
+}
+	@Test
+	public void testingIfheadofhouseholdFunctionIsIsWorkingProperlyForIncomesForTheSixthInstance() {
+		IncomeTax tax = new IncomeTax();
+		
+		double result = tax.headofhousehold(400000);
+		
+		assertEquals(137912.5, result);
+}
+
 }
