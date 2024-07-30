@@ -7,4 +7,12 @@
 
 
 def get_sortednumbers(num_one, num_two, num_three):
+	largest = 0
+	small = 0
+	smallest = 0
+	if num_one >= num_two and num_one >= num_three: 
+		largest = num_one
+		if num_two > num_three
+			small = num_two
+			smallest = num_three
 	
