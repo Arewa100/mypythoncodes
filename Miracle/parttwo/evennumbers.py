@@ -9,7 +9,7 @@
 # 7: check if value is equals to 4, if true return True
 # 8: if false return False
 
-#  outside the function
+#  outside the function...main code 
 
 # 9: create a variable called counter and assign a value of 1000 to it.
 # 10: write a iteration statement 
