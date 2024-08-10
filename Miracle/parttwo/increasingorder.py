@@ -12,26 +12,37 @@ def get_sortednumbers(num_one, num_two, num_three):
 	smallest = 0
 	if num_one >= num_two and num_one >= num_three: 
 		largest = num_one
-		if num_two > num_three
+		if num_two > num_three:
 			small = num_two
 			smallest = num_three
 		else:
 			small = num_three
 			smallest = num_two
 	elif  num_two >= num_one and num_two >= num_three: 
-		largest = num_one
-		if num_one > num_three
+		largest = num_two
+		if num_one > num_three:
 			small = num_one
 			smallest = num_three
 		else:
 			small = num_three
 			smallest = num_one
 	elif  num_three >= num_one and num_three >= num_two: 
-		largest = num_one
-		if num_two > num_three
+		largest = num_three
+		if num_two > num_one:
 			small = num_two
-			smallest = num_three
+			smallest = num_one
 		else:
-			small = num_three
+			small = num_one
 			smallest = num_two
+		
+	number_list = [smallest, small, largest]
+	return number_list
+
+
+
+result=  get_sortednumbers(5,10, 1)
+print(result)
+
+
+
 
