@@ -35,20 +35,20 @@
 
 
 
-family = {
-    "father": "Mr Olu",
-    "mother": "Mrs Olu",
-    "Children": 4,
-    "language": "yoruba"
-}
+# family = {
+#     "father": "Mr Olu",
+#     "mother": "Mrs Olu",
+#     "Children": 4,
+#     "language": "yoruba"
+# }
 
 # for key, value in family.items():
 #     #"""this is simply looping through the dictionary"""  this is unpacking
 #     print(key, value, end= ' ')
 
 #looping through the keys alone
-for keys in family.keys():
-    print(keys)
+# for keys in family.keys():
+#     print(keys)
 
 # print(family.pop("father"))
 # new_family = family.copy()
@@ -61,11 +61,14 @@ for keys in family.keys():
 
 #unpacking iterables
 
-first_list = range(1, 7)
-#""unpacking it"""
-a, b, *c = first_list
-
-print(a, b, c)
+# first_list = range(1, 7)
+# #""unpacking it"""
+# a, b, *c = first_list
+#
+# print(a, b, c)
 
 # given_value = [1, 2, 3, 4, 5]
 # output = {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+from key_multiplier import key_multiplier
+given_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(key_multiplier(given_list))
