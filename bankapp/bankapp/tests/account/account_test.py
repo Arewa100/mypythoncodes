@@ -61,11 +61,42 @@ class TestAccount(TestCase):
         self.account.update_pin("1222")
         self.assertRaises(ValueError,  self.account.update_pin, "1222")
 
-    def test_that_to_check_balance_or_update_pin_default_pin_must_be_changed(self):
+    def test_that_to_check_balance_or_update_pin_the_default_pin_must_be_changed(self):
         self.account.deposit("5555", 2000)
         self.assertRaises(ValueError, self.account.check_balance, "5555", "0000")
         self.account.update_pin("1222")
         self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
-   
 
+    def test_to_deposit_10k_and_withdraw_5k_balance_5k(self):
+        self.account.update_pin("1222")
+        self.account.deposit("5555", 10000)
+        self.assertEqual(self.account.check_balance("5555", "1222"), 10000)
+        self.account.withdraw("5555", 5000, "1222")
+        self.assertEqual(self.account.check_balance("5555", "1222"), 5000)
 
+    def test_to_deposit_10k_withdraw_2k_and_balance_is_8k(self):
+        self.account.update_pin("1222")
+        self.account.deposit("5555", 10000)
+        self.assertEqual(self.account.check_balance("5555", "1222"), 10000)
+        self.account.withdraw("5555", 2000, "1222")
+        self.assertEqual(self.account.check_balance("5555", "1222"), 8000)
+
+    def test_deposit_2k_and_withdraw_5k_balance_2k(self):
+        self.account.update_pin("1222")
+        self.account.deposit("5555", 2000)
+        self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
+        self.assertRaises(ValueError, self.account.withdraw, "5545", 5000, "1122")
+        self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
+
+    def test_to_deposit_2k_and_withdraw_minus_2k_and_balance_is_2k(self):
+        self.account.update_pin("1222")
+        self.account.deposit("5555", 2000)
+        self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
+        self.assertRaises(ValueError, self.account.withdraw, "5555", -2000, "1122")
+        self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
+
+    def test_to_confirm_account_number_and_pin_before_withdrawal(self):
+        self.account.update_pin("1222")
+        self.account.deposit("5555", 2000)
+        self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
+        self.assertRaises(ValueError, self.account.withdraw, "5545", 2000, "1122")

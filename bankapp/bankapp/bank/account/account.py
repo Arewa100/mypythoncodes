@@ -17,11 +17,11 @@ class Account:
 
     def deposit(self, account_number, amount):
         """method to deposit money into the account"""
-        if amount > 0 and self.account_number == account_number:
+        if amount > Decimal("0.00") and self.account_number == account_number:
             self.balance = self.balance + Decimal(amount)
         elif not self.account_number == account_number:
             raise ValueError("incorrect account number...")
-        elif amount < 0:
+        elif amount < Decimal("0.00"):
             raise ValueError("invalid amount...")
 
     def update_pin(self, new_pin):
@@ -29,5 +29,20 @@ class Account:
         if new_pin == self.pin or len(new_pin) != 4:
             raise ValueError("ensure pin is 4 digits and not old pin...")
         self.pin = new_pin
+
+    def withdraw(self, account_number, amount, pin):
+        """method to withdraw money from the account"""
+        if self.account_balance_is_sufficient(amount) and self.pin_is_valid_and_account_number(account_number, pin):
+            self.balance = self.balance - Decimal(amount)
+        else:
+            raise ValueError("incorrect pin, amount or account_number...")
+
+    def account_balance_is_sufficient(self, amount):
+        """method to check if the account balance is sufficient"""
+        return self.balance >= Decimal(amount) and Decimal(amount) > Decimal('0')
+
+    def pin_is_valid_and_account_number(self, account_number, pin):
+        """method to check if the pin is valid and account number"""
+        return self.pin == pin and self.account_number == account_number
 
 
