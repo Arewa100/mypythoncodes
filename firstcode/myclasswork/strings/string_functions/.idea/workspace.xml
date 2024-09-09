@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4db722e-c670-4e39-9d75-6b08a13a1986" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/strings/character_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strings/character_swapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/character_swapper_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/character_swapper_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,17 +19,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2lpU56zOgXJO0wLcVBOqJ85qK19" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -39,10 +43,21 @@
     "Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz.executor": "Run",
     "Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyz_abz.executor": "Run",
     "Python tests.Python tests for character_swapper_test.TestCase.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.test_to_check_the_number_occurrence_of_e_in_semicolon.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_that_character_placer_exists.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_ce_and_helloo_and_receive_helceloo.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_ce_and_helloo_and_return_helceloo.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_mapple_and_ce_and_return_mapceple.executor": "Run",
     "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.executor": "Run",
     "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_that_character_swapper_exits.executor": "Run",
     "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_cup_and_pop_and_get_pop_cup.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_numbers_and_throw_exception.executor": "Run",
     "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sorter_exits.executor": "Run",
+    "Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_SeMiColON.executor": "Run",
+    "Python.character_functions.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -53,7 +68,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper">
+  <component name="RunManager" selected="Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="string_functions" />
       <option name="ENV_FILES" value="" />
@@ -77,7 +92,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for character_swapper_test.TestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="string_functions" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,11 +104,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;character_swapper_test.TestCase&quot;" />
+      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForCharacterOccurrenceChecker&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for character_swapper_test.TestCaseForCharacterSwapper" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.test_to_check_the_number_occurrence_of_e_in_semicolon" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="string_functions" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,11 +120,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForCharacterSwapper&quot;" />
+      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForCharacterOccurrenceChecker.test_to_check_the_number_occurrence_of_e_in_semicolon&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_that_character_swapper_exits" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for character_swapper_test.TestCaseForWordSorter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="string_functions" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,11 +136,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForCharacterSwapper.test_that_character_swapper_exits&quot;" />
+      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForWordSorter&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_cup_and_pop_and_get_pop_cup" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sorter_exits" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="string_functions" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,11 +152,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_cup_and_pop_and_get_pop_cup&quot;" />
+      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForWordSorter.test_that_word_sorter_exits&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_SeMiColON" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="string_functions" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,17 +168,17 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz&quot;" />
+      <option name="_new_target" value="&quot;character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_SeMiColON&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper" />
-        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_cup_and_pop_and_get_pop_cup" />
-        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz" />
-        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_that_character_swapper_exits" />
-        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCase" />
+        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker" />
+        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.test_to_check_the_number_occurrence_of_e_in_semicolon" />
+        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForWordSorter" />
+        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_SeMiColON" />
+        <item itemvalue="Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sorter_exits" />
       </list>
     </recent_temporary>
   </component>
@@ -183,25 +198,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725876324783</updated>
-      <workItem from="1725876326762" duration="1972000" />
+      <workItem from="1725876326762" duration="10428000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/string_functions$.coverage" NAME=" Coverage Results" MODIFIED="1725878294531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/string_functions$character_functions.coverage" NAME="character_functions Coverage Results" MODIFIED="1725883371828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/strings" />
+    <SUITE FILE_PATH="coverage/string_functions$.coverage" NAME=" Coverage Results" MODIFIED="1725887002860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>
