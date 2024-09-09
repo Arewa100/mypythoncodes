@@ -17,7 +17,7 @@ def character_placer(first_string, second_string):
     NEW_LENGTH = SECOND_STRING_LENGTH + FIRST_STRING_LENGTH
     if SECOND_STRING_LENGTH % 2 == 0:
         new_index = SECOND_STRING_LENGTH // 2
-        for count in range(SECOND_STRING_LENGTH):
+        for count in range(NEW_LENGTH):
             if count == new_index:
                 combined_strings += first_string[0]
             elif count == new_index + 1:
@@ -41,3 +41,12 @@ def word_sorter(word):
 def character_occurrence_checker(first_string, character):
     number_of_occurrences = first_string.count(character)
     return character, number_of_occurrences
+
+def special_character_remover(string_input):
+    new_word = ""
+    STRING_LENGTH = len(string_input)
+    for count in range(STRING_LENGTH):
+        if string_input[count].isalpha():
+            new_word += string_input[count]
+    return new_word
+

@@ -3,7 +3,7 @@ from src.strings.character_functions import character_swapper
 from src.strings.character_functions import character_placer
 from strings.character_functions import word_sorter
 from strings.character_functions import character_occurrence_checker
-
+from strings.character_functions import special_character_remover
 
 class TestCaseForCharacterSwapper(TestCase):
     def test_that_character_swapper_exists(self):
@@ -29,12 +29,19 @@ class TestCaseForCharacterPlacer(TestCase):
     def test_to_take_argument_mapple_and_ce_and_return_mapceple(self):
         self.assertEqual(character_placer('ce', 'mapple'), 'mapceple')
 
+
+
 class TestCaseForWordSorter(TestCase):
     def test_that_word_sorter_exists(self):
         word_sorter("SeMiColON")
 
     def test_that_word_sortter_can_rearrange_the_word_SeMiColON(self):
         self.assertEqual(word_sorter("SeMiColON"), "SMCONeiol")
+
+    def test_that_word_sortter_can_rearrange_the_word_HannAH(self):
+        self.assertEqual(word_sorter("HannAH"), "HAHann")
+
+
 
 class TestCaseForCharacterOccurrenceChecker(TestCase):
     def test_that_character_occurrence_checker_exists(self):
@@ -43,4 +50,16 @@ class TestCaseForCharacterOccurrenceChecker(TestCase):
     def test_to_check_the_number_occurrence_of_e_in_semicolon(self):
         self.assertEqual(character_occurrence_checker("semicolon", "o"), ('o', 2))
 
-    def test_
+    def test_to_check_the_number_occurrence_of_a_in_hanna(self):
+        self.assertEqual(character_occurrence_checker("hanna", "a"), ('a', 2))
+
+
+class TestCaseForSpecialCharacterRemover(TestCase):
+    def test_that_special_character_remover_exists(self):
+        special_character_remover("he,ll.o")
+
+    def test_that_function_can_remove_special_character_from_input(self):
+        self.assertEqual(special_character_remover("he,ll.o"), "hello")
+
+    def test_that_function_can_remove_special_character_from_input2(self):
+        self.assertEqual(special_character_remover("ja..ck"), "jack")
