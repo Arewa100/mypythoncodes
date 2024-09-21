@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f4db722e-c670-4e39-9d75-6b08a13a1986" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strings/character_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/strings/character_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/character_swapper_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/character_swapper_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,43 +32,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests for character_swapper_test.MyTestCase.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.MyTestCase.test_that_character_swapper_exits.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_cup_and_pop_and_get_pop_cup.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyz_abz.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCase.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.test_to_check_the_number_occurrence_of_e_in_semicolon.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_that_character_placer_exists.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_ce_and_helloo_and_receive_helceloo.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_ce_and_helloo_and_return_helceloo.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_mapple_and_ce_and_return_mapceple.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_that_character_swapper_exits.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_cup_and_pop_and_get_pop_cup.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_numbers_and_throw_exception.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForSpecialCharacterRemover.test_that_function_can_remove_special_character_from_input.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForSpecialCharacterRemover.test_that_special_character_remover_exists.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sorter_exits.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_HannAH.executor": "Run",
-    "Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_SeMiColON.executor": "Run",
-    "Python.character_functions.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests for character_swapper_test.MyTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.MyTestCase.test_that_character_swapper_exits.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_cup_and_pop_and_get_pop_cup.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.MyTestCase.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyz_abz.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterOccurrenceChecker.test_to_check_the_number_occurrence_of_e_in_semicolon.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_that_character_placer_exists.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_ce_and_helloo_and_receive_helceloo.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_ce_and_helloo_and_return_helceloo.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterPlacer.test_to_take_argument_mapple_and_ce_and_return_mapceple.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_that_character_swapper_exits.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_cup_and_pop_and_get_pop_cup.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_numbers_and_throw_exception.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForCharacterSwapper.test_to_pass_two_arguments_abc_xyz_and_get_a_swapped_character_xyc_abz.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForSpecialCharacterRemover.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForSpecialCharacterRemover.test_that_function_can_remove_special_character_from_input.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForSpecialCharacterRemover.test_that_function_can_remove_special_character_from_input2.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForSpecialCharacterRemover.test_that_special_character_remover_exists.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sorter_exits.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_HannAH.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for character_swapper_test.TestCaseForWordSorter.test_that_word_sortter_can_rearrange_the_word_SeMiColON.executor&quot;: &quot;Run&quot;,
+    &quot;Python.character_functions.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for character_swapper_test.TestCaseForSpecialCharacterRemover">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="string_functions" />
@@ -200,7 +201,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725876324783</updated>
-      <workItem from="1725876326762" duration="11759000" />
+      <workItem from="1725876326762" duration="13358000" />
+      <workItem from="1725959309635" duration="599000" />
+      <workItem from="1726443096184" duration="64000" />
     </task>
     <servers />
   </component>
@@ -209,6 +212,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/string_functions$character_functions.coverage" NAME="character_functions Coverage Results" MODIFIED="1725883371828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/strings" />
-    <SUITE FILE_PATH="coverage/string_functions$.coverage" NAME=" Coverage Results" MODIFIED="1725888378886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/string_functions$.coverage" NAME=" Coverage Results" MODIFIED="1725889266080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>

@@ -10,14 +10,20 @@ class Account:
 
     def check_balance(self, account_number, pin):
         """method to check the balance of the account"""
-        if account_number == self.account_number and pin == self.pin and self.pin != "0000":
+        if self.account_number_is_valid(account_number) and self.pin_is_valid(pin):
             return self.balance
         else:
             raise ValueError("incorrect pin or account_number...")
 
+    def account_number_is_valid(self, account_number):
+        return account_number == self.account_number
+
+    def pin_is_valid(self, pin):
+        return pin == self.pin and self.pin != "0000"
+
     def deposit(self, account_number, amount):
         """method to deposit money into the account"""
-        if amount > Decimal("0.00") and self.account_number == account_number:
+        if amount > Decimal("0.00") and self.account_number_is_valid(account_number):
             self.balance = self.balance + Decimal(amount)
         elif not self.account_number == account_number:
             raise ValueError("incorrect account number...")
@@ -26,23 +32,19 @@ class Account:
 
     def update_pin(self, new_pin):
         """method to update the pin of the account"""
-        if new_pin == self.pin or len(new_pin) != 4:
+        if self.pin_is_valid(new_pin) or len(new_pin) != 4:
             raise ValueError("ensure pin is 4 digits and not old pin...")
         self.pin = new_pin
 
     def withdraw(self, account_number, amount, pin):
         """method to withdraw money from the account"""
-        if self.account_balance_is_sufficient(amount) and self.pin_is_valid_and_account_number(account_number, pin):
+        if self.account_balance_is_sufficient(amount) and self.pin_is_valid(pin) and self.account_number_is_valid(account_number):
             self.balance = self.balance - Decimal(amount)
         else:
             raise ValueError("incorrect pin, amount or account_number...")
 
     def account_balance_is_sufficient(self, amount):
         """method to check if the account balance is sufficient"""
-        return self.balance >= Decimal(amount) and Decimal(amount) > Decimal('0')
-
-    def pin_is_valid_and_account_number(self, account_number, pin):
-        """method to check if the pin is valid and account number"""
-        return self.pin == pin and self.account_number == account_number
+        return self.balance >= Decimal(amount) > Decimal('0')
 
 

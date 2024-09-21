@@ -1,9 +1,5 @@
 from unittest import TestCase
-from src.strings.character_functions import character_swapper
-from src.strings.character_functions import character_placer
-from strings.character_functions import word_sorter
-from strings.character_functions import character_occurrence_checker
-from strings.character_functions import special_character_remover
+from src.strings.character_functions import character_swapper, character_placer, word_sorter, character_occurrence_checker, special_character_remover
 
 class TestCaseForCharacterSwapper(TestCase):
     def test_that_character_swapper_exists(self):

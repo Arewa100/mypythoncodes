@@ -1,5 +1,5 @@
 from unittest import TestCase
-from bank.account.account import Account
+from src.account.account import Account
 
 
 class TestAccount(TestCase):
@@ -13,7 +13,7 @@ class TestAccount(TestCase):
         self.account.update_pin("1222")
         self.assertEqual(self.account.check_balance("5555", "1222"), 0)
 
-    def test_to_deposit_2k_and_check_balance_to_be_2k(self):
+    def test_to_deposit_2k_and_check_bala  nnce_to_be_2k(self):
         self.account.deposit("5555", 2000)
         self.account.update_pin("1222")
         self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
@@ -50,7 +50,7 @@ class TestAccount(TestCase):
         self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
         self.assertRaises(ValueError, self.account.update_pin, "1222")
 
-    def test_to_deposit_only_when_account_number_is_not_valid(self):
+    def test_to_deposit_only_when_account_number_is__valid(self):
         self.account.deposit("5555", 2000)
         self.account.update_pin("1222")
         self.assertEqual(self.account.check_balance("5555", "1222"), 2000)
@@ -59,7 +59,7 @@ class TestAccount(TestCase):
     def test_that_length_of_pin_must_be_four(self):
         self.account.deposit("5555", 2000)
         self.account.update_pin("1222")
-        self.assertRaises(ValueError,  self.account.update_pin, "1222")
+        self.assertRaises(ValueError,  self.account.update_pin, "1222")  #i need to fix here
 
     def test_that_to_check_balance_or_update_pin_the_default_pin_must_be_changed(self):
         self.account.deposit("5555", 2000)

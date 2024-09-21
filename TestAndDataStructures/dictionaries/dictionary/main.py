@@ -24,16 +24,7 @@
 # for student in range(NUMBER_OF_STUDENTS):
 #     print(students[student]["first_name"])
 # # print(students[0]["first_name"])
-
-
-
-
-
-
-
-
-
-
+from tkinter.font import names
 
 family = {
     "father": "Mr Olu",
@@ -89,3 +80,29 @@ print(family.items())
 # print(my_set | empty_set)
 # my_set.clear()
 # print(my_set)
+
+
+
+#tuples
+# details = ("name", "name", 'age', 29)
+# print(details.count("name"))
+# print(details.index("age"))
+# store = []
+# store += details
+# print(store)
+# print(details[2])
+
+#unpacking
+# student_grade = ("joseph", [2, 4, 5])
+# name, grade = student_grade
+# print(name)
+# print(grade)
+
+#splitlines
+#character testing method
+#islower
+#istitle
+#isupper
+#isdigit
+given_string = "eee"
+print(given_string.isdigit())
