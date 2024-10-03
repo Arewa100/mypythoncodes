@@ -22,10 +22,7 @@ class Tv:
             return 0
 
     def __tv_is_on(self):
-            if self.__is_on:
-                return True
-            else:
-                return False
+        return True if self.__is_on else False
 
     def set_channel(self, channel):
         if self.__television_is_on_and_channel_is_within_range(channel):
@@ -70,15 +67,9 @@ class Tv:
             return 0
 
     def __channel_within_range(self, channel):
-        if channel >= 1 and channel <= 100:
-            return True
-        else:
-            return False
-
+        return True if channel >= 1 and channel <= 100 else False
 
     def __television_is_on_and_channel_is_within_range(self, channel):
-        if self.__tv_is_on() and self.__channel_within_range(channel):
-            return True
-        else:
-            return False
+        return True if self.__tv_is_on() and self.__channel_within_range(channel) else False
+
 
