@@ -3,7 +3,7 @@ from src.my_time.time import MyTime
 
 class TestTime(TestCase):
     def test_that_time_object_exists(self):
-        time = MyTime()
+        time = MyTime(10, 20, 10)
         self.assertTrue((isinstance(time, MyTime)), "time object is a Time object")
 
     def test_that_the_time_object_can_initialize_the_hour_minute_second(self):
