@@ -67,7 +67,7 @@ class Tv:
             return 0
 
     def __channel_within_range(self, channel):
-        return True if channel >= 1 and channel <= 100 else False
+        return True if 1 <= channel <= 100 else False
 
     def __television_is_on_and_channel_is_within_range(self, channel):
         return True if self.__tv_is_on() and self.__channel_within_range(channel) else False
