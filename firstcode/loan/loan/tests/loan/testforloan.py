@@ -29,8 +29,8 @@ class TestLoan(TestCase):
         self.assertRaises(ValueError, Loan, "Grady", "Boosh", 12, 2000, 0)
 
     def test_that_monthly_payment_on_loan_can_be_gotten(self):
-        self.assertEqual(self.loan.compute_monthly_payment(), 312000)
+        self.assertEqual(self.loan.compute_monthly_payment(), 4000)
 
     def test_to_check_total_payment(self):
-        self.assertEqual(self.loan.total_payment(), 312000)
+        self.assertEqual(self.loan.total_payment(), 4000)
 
