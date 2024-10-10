@@ -46,4 +46,12 @@ class Loan:
         else: raise ValueError("Loan duration cannot be negative")
 
     def compute_monthly_payment(self):
-        pass
+        numerator = self.loan_amount *  self.annual_rate
+        monthly_interest_rate = 1/(1 + self.annual_rate)
+        new_result = monthly_interest_rate**self.loan_duration
+        return numerator / new_result
+
+    def total_payment(self):
+        monthly_payment = self.compute_monthly_payment()
+        return monthly_payment ** self.loan_duration
+
