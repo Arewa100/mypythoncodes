@@ -33,5 +33,17 @@ class TestStack(TestCase):
         self.stack.push(10)
         self.stack.push(9)
         self.stack.push(4)
+        self.assertEqual(self.stack.peek(), 4)
         self.stack.pop()
         self.assertEqual(self.stack.peek(), 9)
+
+    def test_that_to_pop_two_items_from_a_stack_and_peek(self):
+        self.stack.push(10)
+        self.stack.push(9)
+        self.stack.push(4)
+        self.assertEqual(self.stack.peek(), 4)
+        self.stack.pop()
+        self.stack.pop()
+        self.assertEqual(self.stack.peek(), 10)
+
+

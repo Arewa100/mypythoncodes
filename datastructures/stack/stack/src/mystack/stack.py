@@ -17,7 +17,17 @@ class Stack:
         self.__number_of_element += 1
 
     def peek(self):
-        return self.__itemList[self.__size - 1]
+        index = len(self.__itemList) - 1
+        while  index >= 0:
+            if not self.__itemList[index] is None:
+                return self.__itemList[index]
+            index = index - 1
 
     def pop(self):
-        self.__itemList[self.__number_of_element - 1] = None
+        index = len(self.__itemList) - 1
+        while index >= 0:
+            if not self.__itemList[index] is None:
+                self.__itemList[index] = None
+                index = 0
+            index = index - 1
+        print(self.__itemList)
