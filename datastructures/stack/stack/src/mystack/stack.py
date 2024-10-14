@@ -30,4 +30,3 @@ class Stack:
                 self.__itemList[index] = None
                 index = 0
             index = index - 1
-        print(self.__itemList)
