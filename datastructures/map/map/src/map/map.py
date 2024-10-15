@@ -32,6 +32,7 @@ class Map:
 
     def delete(self, key):
        self.__iterate_through_key_and_delete_key(key)
+       print(self.__key)
        # self.__iterate_through_value_and_delete_value(key)
        self.__decrement_size()
 
@@ -41,18 +42,21 @@ class Map:
         for key_index in range(len(self.__key)):
             if key_index == last_index_of_list:
                 self.__delete_last_key(key_index)
-                print(self.__key)
+
+
             elif self.__key[key_index] == key and not key_index == last_index_of_list:
                 self.__push_the_next_key_to_position_of_the_deleted_key(key_index)
                 self.__push_the_key_after_the_previous_pushed_key_to_position_of_previous_pushed_key(key_index)
                 self.__turn_key_in_position_of_current_pushed_key_to_none(key_index)
 
             else:
-                key = self.__key[key_index]
-                self.__insert_next_key(key_index, key)
+                current_key = self.__key[key_index]
+                print(current_key)
+                self.__insert_next_key(key_index, current_key)
+
 
     def __insert_next_key(self, key_index, key):
-        self.__value[key_index] = key
+        self.__key[key_index] = key
 
     def __decrement_size(self):
         self.__size -= 1
@@ -62,8 +66,13 @@ class Map:
 
     def __push_the_next_key_to_position_of_the_deleted_key(self, key_index):
         self.__key[key_index] = self.__key[key_index + 1]
+        self.__key[key_index + 1] = None
+        print(self.__key[key_index])
+        print(self.__key)
     def __push_the_key_after_the_previous_pushed_key_to_position_of_previous_pushed_key(self, key_index):
-        self.__key[key_index + 1] = self.__key[key_index + 2]
+        if self.__key[key_index] is not None:
+            self.__key[key_index + 1] = self.__key[key_index + 2]
+        print(self.__key[key_index + 1])
     def __turn_key_in_position_of_current_pushed_key_to_none(self, key_index):
         self.__key[key_index + 2] = None
 
@@ -100,7 +109,7 @@ class Map:
     # def __turn_value_in_position_of_current_pushed_value_to_none(self, value_index):
     #     self.__value[value_index+ 2] = None
     #
-    # def __get_index_of_key(self, key):
-    #     for key_index in range(len(self.__key)):
-    #         if self.__key[key_index] == key:
-    #             return key_index
+    def __get_index_of_key(self, key):
+        for key_index in range(len(self.__key)):
+            if self.__key[key_index] == key:
+                return key_index
