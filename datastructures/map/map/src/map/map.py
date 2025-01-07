@@ -66,13 +66,8 @@ class Map:
 
     def __push_the_next_key_to_position_of_the_deleted_key(self, key_index):
         self.__key[key_index] = self.__key[key_index + 1]
-        self.__key[key_index + 1] = None
-        print(self.__key[key_index])
-        print(self.__key)
     def __push_the_key_after_the_previous_pushed_key_to_position_of_previous_pushed_key(self, key_index):
-        if self.__key[key_index] is not None:
-            self.__key[key_index + 1] = self.__key[key_index + 2]
-        print(self.__key[key_index + 1])
+        self.__key[key_index + 1] = self.__key[key_index + 2]
     def __turn_key_in_position_of_current_pushed_key_to_none(self, key_index):
         self.__key[key_index + 2] = None
 
